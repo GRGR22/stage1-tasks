@@ -129,7 +129,7 @@ body {
 	pointer-events: none;
 }
 .piano-key::before,
-.piano-key::after {
+.piano-key::after{
 	content: attr(data-note);
 	position: absolute;
 	width: 40px;
@@ -142,7 +142,7 @@ body {
 	left: 20px;
 	transition: 0.3s;
 }
-.piano-key::after {
+.piano-key::after{
 	display: none;
 	content: attr(data-letter);
 }
@@ -150,11 +150,9 @@ body {
 .piano-key:hover::after {
 	color: #d7dfe6;
 }
-
 .sharp:active {
 	border-top: 0;
 }
-
 .piano-key.sharp::before,
 .piano-key.sharp::after {
 	bottom: 175px;
@@ -169,18 +167,15 @@ body {
 .piano-key-letter::before {
 	content: attr(data-letter);
 }
-
 .piano-key-remove-mouse:active::before {
 	color: #a2abb3;
 }
-
 .piano-key-active-pseudo:hover::after,
 .piano-key-active-pseudo:hover::before,
 .piano-key-active::after,
 .piano-key-active::before {
 	color: #00b4a4;
 }
-
 .fullscreen {
 	position: fixed;
 	top: 120px;
